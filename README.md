@@ -132,8 +132,6 @@ RiskScore = (0.60 × RainScore) + (0.40 × TempScore)
 4. Evaluate final RiskScore against payout threshold
 5. Trigger payout or hold
 
----
-
 ## System Flowchart
 
 ```mermaid
