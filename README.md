@@ -155,7 +155,7 @@ flowchart TD
     L --> O[Auto Payout Processed]
     M --> O
     N --> O
-    O --> P[Money Credited to Worker
+    O --> P[Money Credited to Worker]
 
 ## Zone System
 
