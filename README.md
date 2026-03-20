@@ -131,32 +131,33 @@ RiskScore = (0.60 × RainScore) + (0.40 × TempScore)
 3. Apply the user's plan-specific formula
 4. Evaluate final RiskScore against payout threshold
 5. Trigger payout or hold
-
+---
 ## System Flowchart
 
 ```mermaid
 flowchart TD
-    A[User Subscribes to Weekly Plan] --> B[System Registers User Location and Zone]
+    A([User Subscribes to Weekly Plan]) --> B[System Registers User Location and Zone]
     B --> C[AI Engine Collects Live Data]
-    C --> D[Weather Data]
-    C --> E[Pollution Data]
-    C --> F[Traffic Data]
-    C --> G[Zone Risk Data]
+    C --> D[Weather Data - Rainfall and Temperature]
+    C --> E[Pollution Data - AQI]
+    C --> F[Traffic Data - Congestion Percentage]
+    C --> G[Zone Risk Data - Strike or Curfew]
     D --> H[Convert Raw Values to Parameter Scores]
     E --> H
     F --> H
     G --> H
-    H --> I[Apply Plan Formula]
+    H --> I[Apply Plan Formula - Gold Silver Bronze]
     I --> J{Score Evaluation}
-    J -->|0-40| K[No Payout]
-    J -->|40-60| L[Small Payout Triggered]
-    J -->|60-80| M[Medium Payout Triggered]
-    J -->|80-100| N[Full Payout Triggered]
+    J -->|Score 0-40| K([No Payout])
+    J -->|Score 40-60| L[Small Payout Triggered]
+    J -->|Score 60-80| M[Medium Payout Triggered]
+    J -->|Score 80-100| N[Full Payout Triggered]
     L --> O[Auto Payout Processed]
     M --> O
     N --> O
-    O --> P[Money Credited to Worker]
+    O --> P([Money Credited to Worker in 24-36 hrs])
 
+ ---
 ## Zone System
 
 The city is divided into geographic zones. Each user registers their 3–4 primary working zones at the time of onboarding. The risk score is calculated specifically for those zones.
