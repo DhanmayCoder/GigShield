@@ -20,6 +20,8 @@ Food delivery workers face the most direct, day-to-day income impact from weathe
 **Raju** is a Zomato delivery partner in Mumbai. On a Tuesday afternoon, rainfall crosses 35mm and the AQI spikes above 250. His risk score hits 84. GigShield automatically detects this in his registered zone, triggers a payout under his Gold plan, and credits his account within 24–36 hours — without Raju having to do anything.
 
 ---
+## Insurance Basic Diagram
+![IMG_20260320_203610](https://github.com/user-attachments/assets/e6ea3654-84c1-4bf9-8a5b-fb279dd70dae)
 
 ## Insurance Plans & Weekly Pricing
 
