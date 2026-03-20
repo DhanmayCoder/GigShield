@@ -134,28 +134,8 @@ RiskScore = (0.60 × RainScore) + (0.40 × TempScore)
 ---
 ## System Flowchart
 
-```mermaid
-flowchart TD
-    A([User Subscribes to Weekly Plan]) --> B[System Registers User Location and Zone]
-    B --> C[AI Engine Collects Live Data]
-    C --> D[Weather Data - Rainfall and Temperature]
-    C --> E[Pollution Data - AQI]
-    C --> F[Traffic Data - Congestion Percentage]
-    C --> G[Zone Risk Data - Strike or Curfew]
-    D --> H[Convert Raw Values to Parameter Scores]
-    E --> H
-    F --> H
-    G --> H
-    H --> I[Apply Plan Formula - Gold Silver Bronze]
-    I --> J{Score Evaluation}
-    J -->|Score 0-40| K([No Payout])
-    J -->|Score 40-60| L[Small Payout Triggered]
-    J -->|Score 60-80| M[Medium Payout Triggered]
-    J -->|Score 80-100| N[Full Payout Triggered]
-    L --> O[Auto Payout Processed]
-    M --> O
-    N --> O
-    O --> P([Money Credited to Worker in 24-36 hrs])
+![IMG_20260320_201517](https://github.com/user-attachments/assets/9aab2199-d4ec-423e-b592-fe1b78558c1e)
+
 
  ---
 ## Zone System
