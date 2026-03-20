@@ -133,7 +133,9 @@ RiskScore = (0.60 × RainScore) + (0.40 × TempScore)
 5. Trigger payout or hold
 ---
 ## System Flowchart
+![IMG_20260320_203138](https://github.com/user-attachments/assets/a5657fbf-a062-4ce4-83c3-752ae5f3131b)
 
+Simplified Diagram
 ![IMG_20260320_201517](https://github.com/user-attachments/assets/9aab2199-d4ec-423e-b592-fe1b78558c1e)
 
 
